@@ -3,6 +3,8 @@
 
 from fastapi import FastAPI
 from pydantic import BaseModel
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 import joblib
 import numpy as np
 
@@ -26,3 +28,8 @@ def predict(data: DiabetesInput):
     input_data = np.array([[data.Pregnancies, data.Glucose, data.BloodPressure, data.BMI, data.Age]])
     prediction = model.predict(input_data)[0]
     return {"diabetic": bool(prediction)}
+
+# Mounting the static files directory to serve the HTML file
+# This allows us to serve a simple HTML interface the api
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
