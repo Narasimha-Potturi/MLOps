@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diabetes Predictor</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <form id="predictForm">
+    <h2 class="text-2xl font-bold text-center mb-6">🩺 Diabetes Prediction</h2>
+
+    <div class="input-group">
+      <label for="Pregnancies">Pregnancies</label>
+      <input type="number" id="Pregnancies" required placeholder="e.g. 2" />
+      <span class="tooltip-icon">ⓘ</span>
+      <div class="tooltip-text">Usual range: 0–15</div>
+    </div>
+
+    <div class="input-group">
+      <label for="Glucose">Glucose</label>
+      <input type="number" id="Glucose" required placeholder="e.g. 120" />
+      <span class="tooltip-icon">ⓘ</span>
+      <div class="tooltip-text">Typical: 70–180 mg/dL</div>
+    </div>
+
+    <div class="input-group">
+      <label for="BloodPressure">Blood Pressure</label>
+      <input type="number" id="BloodPressure" required placeholder="e.g. 80" />
+      <span class="tooltip-icon">ⓘ</span>
+      <div class="tooltip-text">Normal: 60–120 mm Hg</div>
+    </div>
+
+    <div class="input-group">
+      <label for="BMI">BMI</label>
+      <input type="number" id="BMI" required placeholder="e.g. 22.5" />
+      <span class="tooltip-icon">ⓘ</span>
+      <div class="tooltip-text">Healthy: 18.5–24.9</div>
+    </div>
+
+    <div class="input-group">
+      <label for="Age">Age</label>
+      <input type="number" id="Age" required placeholder="e.g. 35" />
+      <span class="tooltip-icon">ⓘ</span>
+      <div class="tooltip-text">Usual: 18–120</div>
+    </div>
+
+    <button type="submit">Predict</button>
+    <div id="result"></div>
+  </form>
+</body>
+</html>

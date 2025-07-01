@@ -19,9 +19,18 @@ class DiabetesInput(BaseModel):
     BMI: float
     Age: int
 
+# This endpoint serves the HTML file for the UI
+# It allows users to interact with the API through a web interface
 @app.get("/")
-def read_root():
-    return {"message": "Diabetes Prediction API is live"}
+def serve_ui():
+    return FileResponse("static/index.html")
+
+# Uncomment the following lines if you want to have a simple root endpoint
+# This endpoint can be used to check if the API is running
+# It return a simple message indicating "API is live"
+# @app.get("/")
+# def read_root():
+#     return {"message": "Diabetes Prediction API is live"}
 
 @app.post("/predict")
 def predict(data: DiabetesInput):

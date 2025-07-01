@@ -1,0 +1,102 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  padding-right: 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  appearance: textfield; /* Remove spinner for most browsers */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tooltip-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #4f46e5;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #f9fafb;
+  color: #1f2937;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.tooltip-icon:hover + .tooltip-text {
+  display: block;
+}
+
+button {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+#result {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
