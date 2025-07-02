@@ -68,10 +68,10 @@ docker build -t diabetes-predictor .
 docker run -p 8000:8000 diabetes-predictor
 ```
 
-## ☸️ Deploy to Kubernetes (Minikube)
+## ☸️ Deploy to Kubernetes (Minikube/Kind/cluster of your choice)
 
 ```bash
-kubectl apply -f diabetes-predictor.yaml
+kubectl apply -f deploy.yaml
 ```
 
 
@@ -89,9 +89,9 @@ kubectl apply -f diabetes-predictor.yaml
 
 * Kubernetes
 
-* GitHub Actions
-
 * HTML + Tailwind CSS
+
+** The repo is designed to be beginner-friendly, with clear instructions and a simple UI for testing the model. It’s a great starting point for anyone looking to learn about MLOps and how to take machine learning models into production.and the ci/cd is stil in progress and will be udpated soon. Keep an eye on the repo for Updates! **
   
 ### Want to Learn MLOps Hands-on?
 
