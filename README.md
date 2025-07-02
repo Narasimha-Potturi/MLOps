@@ -43,7 +43,7 @@ It contains an ML model that is containerized, deployed to a **Kubernetes cluste
 - REST API built using **FastAPI**
 - Containerized with **Docker**
 - Deployed to **Kubernetes** (minikube/kind/GKE)
-- Automated builds & deployments using **GitHub Actions**
+<!--- Automated builds & deployments using **GitHub Actions**-->
 - Clean and interactive UI for users to input values
 
 
