@@ -43,9 +43,8 @@ It contains an ML model that is containerized, deployed to a **Kubernetes cluste
 - REST API built using **FastAPI**
 - Containerized with **Docker**
 - Deployed to **Kubernetes** (minikube/kind/GKE)
-<!--- Automated builds & deployments using **GitHub Actions**-->
 - Clean and interactive UI for users to input values
-
+<!--- Automated builds & deployments using **GitHub Actions**-->
 
 ## 🚀 How to Run Locally (Docker)
 
@@ -114,7 +113,7 @@ When you open the web UI, you can enter the desired values.
 
 * HTML + Tailwind CSS
 
-The repo is designed to be beginner-friendly, with clear instructions and a simple UI for testing the model. It’s a great starting point for anyone looking to learn about MLOps and how to take machine learning models into production. The ci/cd is stil in progress and will be udpated soon. Keep an eye on the repo for Updates!
+The repo is designed to be beginner-friendly, with clear instructions and a simple UI for testing the model. It’s a great starting point for anyone looking to learn about MLOps and how to take machine learning models into production. The CI/CD is stil in progress and will be udpated soon. Keep an eye on the repo for Updates!
 
 ### Want to Learn MLOps Hands-on?
 
