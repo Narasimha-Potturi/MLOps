@@ -33,9 +33,9 @@ Steps Included in a standard machine learning lifecycle
 We’ve seen what **MLOps** is — the process of taking a machine learning model beyond development and into production with automation, monitoring, and scalability.
 
 This repository is a practical demonstration of **MLOps in action**:  
-It contains an ML model that is containerized, deployed to a **Kubernetes cluster**, and fully automated using **GitHub Actions** for CI/CD.
+It contains an ML model that is containerized, deployed to a **Kubernetes cluster**.
+<!--, and fully automated using **GitHub Actions** for CI/CD.-->
 
----
 
 ## 📦 What's in this repo?
 
@@ -46,7 +46,6 @@ It contains an ML model that is containerized, deployed to a **Kubernetes cluste
 - Automated builds & deployments using **GitHub Actions**
 - Clean and interactive UI for users to input values
 
----
 
 ## 🚀 How to Run Locally (Docker)
 
@@ -67,8 +66,10 @@ docker build -t diabetes-predictor .
 ```bash
 docker run -p 8000:8000 diabetes-predictor
 ```
+Verify the webisite on your localhost
+`http://localhost:8000/`
 
-## ☸️ Deploy to Kubernetes (Minikube/Kind/cluster of your choice)
+### 4. Deploy to Kubernetes (Minikube/Kind/cluster of your choice)
 
 ```bash
 kubectl apply -f deploy.yaml
@@ -76,7 +77,29 @@ kubectl apply -f deploy.yaml
 
 
 ## 📸 UI Preview
+
+![Screenshot_1-7-2025_183148_localhost](https://github.com/user-attachments/assets/29b39892-13f8-49a3-9410-bceda6101bec)
+
 <!-- Add screenshot if needed -->
+
+---
+
+## 🧪 Sample Input Values
+
+You can use the following sample values when testing the application:
+
+| Parameter         | Sample Value | Ideal Healthy Range               |
+|------------------|--------------|-----------------------------------|
+| **Pregnancies**   | `1`          | 0 – 15                            |
+| **Glucose**       | `100`        | 70 – 140 mg/dL                    |
+| **Blood Pressure**| `80`         | 60 – 120 mm Hg                    |
+| **BMI**           | `22.5`       | 18.5 – 24.9                       |
+| **Age**           | `30`         | 18 – 60                           |
+
+These values simulate a healthy person's vitals and can be used for quick testing.  
+When you open the web UI, you can enter the desired values.
+
+---
 
 
 ## Technologies Used
@@ -91,8 +114,8 @@ kubectl apply -f deploy.yaml
 
 * HTML + Tailwind CSS
 
-** The repo is designed to be beginner-friendly, with clear instructions and a simple UI for testing the model. It’s a great starting point for anyone looking to learn about MLOps and how to take machine learning models into production.and the ci/cd is stil in progress and will be udpated soon. Keep an eye on the repo for Updates! **
-  
+The repo is designed to be beginner-friendly, with clear instructions and a simple UI for testing the model. It’s a great starting point for anyone looking to learn about MLOps and how to take machine learning models into production. The ci/cd is stil in progress and will be udpated soon. Keep an eye on the repo for Updates!
+
 ### Want to Learn MLOps Hands-on?
 
 **Follow this repo to see how to take ML models all the way to production — and stay tuned for upcoming CI/CD, monitoring, and logging features.**
