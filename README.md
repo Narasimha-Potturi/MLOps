@@ -51,8 +51,8 @@ It contains an ML model that is containerized, deployed to a **Kubernetes cluste
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/diabetes-predictor-mlops.git
-cd diabetes-predictor-mlops
+git clone https://github.com/Narasimha-Potturi/MLOps.git
+cd MLOps
 ```
 
 ### 2. Build the docker image
